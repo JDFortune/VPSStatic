@@ -8,7 +8,7 @@ const path = require('path');
 app.use('/images', express.static(path.join(__dirname, 'images')))
 
 app.get('/', (req, res) => {
-  res.send('<img src="../images/me.jpg" alt="picture of me">' + '<p>' + __dirname + 'images' + '</p>');
+  res.send('<img src="../images/me.jpg" width="600" alt="picture of me">' + '<p>' + __dirname + 'images' + '</p>');
 });
 
 app.listen(PORT, () => {
