@@ -19,6 +19,7 @@ app.get('/', (req, res) => {
             res.send(data);
         }
     });
+    // res.send('<img src="../../images/me.jpg" width="600" alt="picture of me">');
 });
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}.`);

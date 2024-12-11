@@ -9,4 +9,15 @@
   <h1>Welcome to my Family Friendly Webpage!</h1>
   <img src="/images/me.jpg" width="600">
 </body>
+
+<script>
+  const header = document.querySelector('h1');
+
+  const colors = ['red', 'green', 'blue'];
+  let count = 0;
+  setInterval(() => {
+    header.style.color = colors[count % colors.length];
+    count++;
+  }, 2000);
+</script>
 </html>
